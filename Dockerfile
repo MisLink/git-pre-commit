@@ -14,5 +14,3 @@ COPY .pre-commit-config-for-build.yaml .pre-commit-config.yaml
 RUN git init . && \
     cat .pre-commit-config.yaml && \
     pre-commit run
-
-ENTRYPOINT [ "pre-commit" ]
